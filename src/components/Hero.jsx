@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Intro } from "./Intro";
 
 export function Hero(){
         const [stars, setStars] = useState(0);
@@ -22,14 +23,10 @@ export function Hero(){
         setDownloads(0);
         setIssues(5);
       }
-      
+
     return (
         <>
-        <header className="px-20 pt-8 text-center">
-            <h2 className="text-7xl font-bold">Build pages faster.</h2>
-            <p className="mt-5 text-2xl text-[#000000]">An open-source component kit for React.</p>
-            <p className="mt-2 text-xl text-[#000000]">Made by Albert Matthew V. Villegas</p>
-        </header>
+        <Intro author={"Albert Matthew V. Villegas"}/>
 
         <div className="flex justify-center gap-4 py-6">
             <button
